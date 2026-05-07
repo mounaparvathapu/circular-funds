@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interest Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #1eae98, #a8e063);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      margin-top: 50px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1eae98;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-size: 16px;
+      color: #333;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      background: #00a5e0;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #007bb8;
+    }
+
+    .result {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      color: #00a1d6;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #1eae98;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #1eae98;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <a href="home.html" class="back-button">← Back to Home</a>
+  <div class="container">
+    <h1>Interest Calculator</h1>
+    <form id="calculatorForm">
+      <label for="principal">Principal Amount ($):</label>
+      <input type="number" id="principal" placeholder="Enter principal amount" required>
+      
+      <label for="rate">Interest Rate (%):</label>
+      <input type="number" id="rate" step="0.01" placeholder="Enter interest rate" required>
+      
+      <label for="time">Time (Years):</label>
+      <input type="number" id="time" placeholder="Enter time in years" required>
+
+      <button type="button" onclick="calculateInterest()">Calculate Interest</button>
+      <button type="reset">Reset</button>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function calculateInterest() {
+      const principal = parseFloat(document.getElementById('principal').value);
+      const rate = parseFloat(document.getElementById('rate').value);
+      const time = parseFloat(document.getElementById('time').value);
+
+      if (principal > 0 && rate > 0 && time > 0) {
+        const interest = (principal * rate * time) / 100;
+        const totalAmount = principal + interest;
+        document.getElementById('result').innerHTML = `
+          Interest: $${interest.toFixed(2)} <br>
+          Total Amount: $${totalAmount.toFixed(2)}
+        `;
+      } else {
+        document.getElementById('result').innerHTML = 'Please enter valid positive values.';
+      }
+    }
+  </script>
+</body>
+</html>

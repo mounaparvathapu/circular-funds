@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #1eae98, #a8e063);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .services-content {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 800px;
+            text-align: left;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1eae98;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            margin-top: 25px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 30px;
+            padding-left: 10px;
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li:hover {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            padding-left: 15px;
+            cursor: pointer;
+        }
+
+       
+        @media (max-width: 768px) {
+            .services-content {
+                padding: 20px;
+                max-width: 90%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            ul li {
+                font-size: 16px;
+            }
+        }
+        .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #1eae98;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1eae98;
+    color: #ffffff;
+}
+    </style>
+</head>
+
+<body>
+    <a href="home.html" class="back-button">← Back</a>
+    <div class="services-content">
+        <h1>Our Services</h1>
+
+        <p class="section-title">Borrowing Services:</p>
+        <ul>
+            <li>Quick Loan Application Process</li>
+            <li>Flexible Repayment Terms</li>
+            <li>Secure Document Upload and Verification</li>
+            <li>Transparent Interest Rates and Fees</li>
+        </ul>
+
+        <p class="section-title">Lending Services:</p>
+        <ul>
+            <li>Easy Loan Browsing and Selection</li>
+            <li>Regular Interest Payments on Loans</li>
+            <li>Secure and Transparent Transactions</li>
+            <li>Reliable Returns on Investment</li>
+        </ul>
+    </div>
+</body>
+
+</html>

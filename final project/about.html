@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer-to-Peer Lending</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1eae98, #a8e063);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #1eae98;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #1eae98;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: rgb(252, 252, 252);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 70%;
+    max-width: 800px;
+    color: #050505;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1, h2 {
+    margin: 10px 0;
+    color: #1eae98;
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+ul {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <a href="home.html" class="back-button">← Back</a>
+    <div class="container">
+        <div class="card">
+            <h1>About Peer-to-Peer Lending</h1>
+            <p>
+                Our Peer-to-Peer Lending platform connects borrowers with lenders in a seamless and secure way. 
+                We aim to offer financial assistance to individuals in need while providing an opportunity 
+                for investors to earn a return on their investments.
+            </p>
+            <h2>How It Works</h2>
+            <ul>
+                <li>Step 1: Borrowers submit a loan request specifying the loan amount and term.</li>
+                <li>Step 2: Lenders browse through loan requests and offer loans to borrowers they trust.</li>
+                <li>Step 3: Once both parties agree, the loan is disbursed, and borrowers begin repaying as per the agreed schedule.</li>
+                <li>Step 4: Lenders earn interest on their loans, and borrowers get the financial support they need.</li>
+            </ul>
+            <h2>Our Vision</h2>
+            <p>
+                We envision a future where anyone can access financial resources and lenders can generate returns, 
+                all while helping others in the community.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

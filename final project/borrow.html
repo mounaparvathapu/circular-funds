@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00a1d6, #89e66c);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background: white;
+            padding: 30px;
+            width: 90%;
+            max-width: 450px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        input[type="text"], input[type="file"], select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #5271ff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3355cc;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #1eae98;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #1eae98;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <a href="home.html" class="back-button">← Back</a>
+    <div class="form-container">
+        <h2>Borrow Section</h2>
+        <form id="borrow-form">
+            <label for="loan-amount">Loan Amount:</label>
+            <input type="text" id="loan-amount" name="loan-amount" placeholder="Enter amount">
+            
+            <label for="loan-tenure">Loan Tenure (in Months):</label>
+            <input type="text" id="loan-tenure" name="loan-tenure" placeholder="Enter tenure">
+            
+            <label for="id-proof">ID Proof:</label>
+            <select id="id-proof" name="id-proof">
+                <option value="passport">Passport</option>
+                <option value="aadhaar">Aadhaar</option>
+                <option value="driving-license">Driving License</option>
+                <option value="pan-card">PAN Card</option>
+                <option value="voter-id">Voter ID</option>
+            </select>
+            
+            <label for="upload-id-proof">Upload ID Proof Document:</label>
+            <input type="file" id="upload-id-proof" name="upload-id-proof">
+            
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function () {
+            window.location.href = "connectingcostumers.html";
+        });
+    </script>
+</body>
+</html>

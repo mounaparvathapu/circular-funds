@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Funds - Payment</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f4f7f6;
+    }
+
+    header {
+      background: linear-gradient(to right, #1eae98, #a8e063);
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .payment-container {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .payment-box {
+      background: white;
+      padding: 40px;
+      width: 400px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .payment-box h2 {
+      color: #1eae98;
+      margin-bottom: 20px;
+    }
+
+    .payment-box input {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .payment-box button {
+      background: #1eae98;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .payment-box button:hover {
+      background: #a8e063;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: #1eae98;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <a href="home.html" class="back-button">← Back</a>
+  <header>
+    <h1>Circle Funds</h1>
+  </header>
+
+  <div class="payment-container">
+    <div class="payment-box">
+      <h2>Payment Information</h2>
+      <input type="text" placeholder="Card Number" />
+      <input type="text" placeholder="Name on Card" />
+      <input type="text" placeholder="Expiry Date" />
+      <input type="text" placeholder="CVV" />
+      <button onclick="redirectToSuccess()">Complete Payment</button>
+    </div>
+  </div>
+
+  <script>
+    function redirectToSuccess() {
+      window.location.href = "successful.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Funds - Premium Subscription</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f8f9fa;
+    }
+
+    header {
+      background:linear-gradient(to right, #1eae98, #a8e063);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .content {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .premium-section {
+      background: #ffffff;
+      padding: 50px 20px;
+      text-align: center;
+      margin: 50px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .premium-section h2 {
+      color: #00796b;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .premium-section p {
+      color: #444;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .premium-section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+
+    .premium-section ul li {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .premium-section button {
+      background: #00796b;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .premium-section button:hover {
+      background: linear-gradient(to right, #1eae98, #a8e063);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background:linear-gradient(to right, #1eae98, #a8e063);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: linear-gradient(to right, #1eae98, #a8e063);
+      border-radius: 8px;
+      font-weight: bold;
+      border: 2px solid #00796b;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: linear-gradient(to right, #1eae98, #a8e063);
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <a href="home.html" class="back-button">← Back</a>
+  <header>
+    <h1>Circle Funds</h1>
+    <p>Connecting wealth with need through peer-to-peer lending</p>
+  </header>
+
+  <div class="content">
+    <h2>Welcome to Premium Subscription</h2>
+    <p>Upgrade to premium for exclusive features and benefits!</p>
+  </div>
+
+  <section class="premium-section">
+    <h2>Become a Premium Member</h2>
+    <p>Unlock exclusive benefits for a better lending and borrowing experience:</p>
+    <ul>
+      <li>Priority loan approvals</li>
+      <li>Lower interest rates</li>
+      <li>24/7 customer support</li>
+      <li>Detailed analytics for your account</li>
+      <li>Free consultations with financial experts</li>
+    </ul>
+    <button onclick="redirectToPayment()">Subscribe Now</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Circle Funds. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function redirectToPayment() {
+      window.location.href = "payment.html"; 
+    }
+  </script>
+</body>
+</html>

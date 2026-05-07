@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Funds</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1eae98, #a8e063);
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 1rem 2rem;
+            background-color: transparent;
+            text-align: left;
+        }
+
+        header .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex: 1;
+            padding: 2rem;
+            text-align: left;
+        }
+
+        .content {
+            max-width: 50%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            background-color: #42b72a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #36a420;
+        }
+
+        .illustration img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="202289173-removebg-preview.png" alt="Circle Funds Logo">
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Empowering your dreams with peer-to-peer lending</h1>
+            <p>Connecting wealthy individuals with those in need, while providing competitive interest rates.</p>
+            <button onclick="redirectToLogin()">Sign in</button>
+        </div>
+        <div class="illustration">
+            <img src="2d83733c902285ef927e59e4e48a8dac-removebg-preview.png" alt="Lending Illustration">
+        </div>
+    </main>
+    <script>
+        function redirectToLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
